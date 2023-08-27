@@ -79,11 +79,11 @@ WSGI_APPLICATION = 'E_Commerce.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Ecommerce',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'DonDB',
         'USER': 'postgres',
         'PASSWORD': 'database',
-        'HOST':'localhost',
+        'HOST':'dondb.ccztb7mpiezl.eu-north-1.rds.amazonaws.com',
         'PORT':'5432',
     }
 }
