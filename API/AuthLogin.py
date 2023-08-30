@@ -1,8 +1,9 @@
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 from django.db import models
 from django.contrib.auth.hashers import make_password
+from API.AuthSerializers import AuthCreateSerializer
 
-class CustomUserManager():
+class CustomUserManager(AuthCreateSerializer):
     def create_user(self, email, password=None, **extra_fields):
         if not email:
             raise ValueError('The Email field must be set')

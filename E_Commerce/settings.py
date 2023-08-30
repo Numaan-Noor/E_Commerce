@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'E_Commerce.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'wolfdb',
         'USER': 'postgres',
         'PASSWORD': 'database',
