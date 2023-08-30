@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'E_Commerce.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '',
+        'NAME': 'postgres-15',
         'USER': 'postgres',
         'PASSWORD': 'database',
         'HOST':'wolfdb.ccztb7mpiezl.eu-north-1.rds.amazonaws.com',
